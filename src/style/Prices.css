@@ -1,0 +1,50 @@
+.Prices-container {
+  padding: 150px 0;
+  background: white;
+}
+
+.Price-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+.Prices-card {
+  padding: 20px 40px;
+  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.322);
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.322);
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c31432), to(#240b36));
+  background: linear-gradient(to bottom, #c31432, #240b36);
+  color: white;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.Prices-card:hover .front {
+  -webkit-transform: perspective(600px) rotateY(-180deg);
+          transform: perspective(600px) rotateY(-180deg);
+}
+
+.Prices-card:hover .back {
+  -webkit-transform: perspective(600px) rotateY(0deg);
+          transform: perspective(600px) rotateY(0deg);
+}
+
+.Prices-card .front, .Prices-card .back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.Prices-card .front {
+  -webkit-transform: perspective(600px) rotateY(0deg);
+          transform: perspective(600px) rotateY(0deg);
+}
+
+.Prices-card .back {
+  -webkit-transform: perspective(600px) rotateY(180deg);
+          transform: perspective(600px) rotateY(180deg);
+}
+/*# sourceMappingURL=Prices.css.map */

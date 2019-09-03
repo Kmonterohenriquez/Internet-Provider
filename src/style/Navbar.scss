@@ -1,0 +1,38 @@
+
+nav{
+    position:absolute;
+    z-index: 5;
+    height: 90px;
+    
+    .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        img{
+            height: 60px;
+        }
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        li{
+            list-style: none;
+            a{
+                padding: 20px 30px;
+                text-decoration: none;
+                color: white;
+                font-size: 1.1rem;
+                letter-spacing: 1px
+            }
+            
+        }
+    }
+}
+.navbar-container{
+    display: grid;
+    grid-template-columns:10% 90%;
+    grid-auto-rows: auto;
+}
