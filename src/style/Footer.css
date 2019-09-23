@@ -1,0 +1,31 @@
+.footer {
+  padding: 100px 0;
+  background: grey;
+}
+
+form {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form label {
+  padding: 5px 15px;
+}
+
+form input {
+  background: trans;
+  margin-bottom: 10px;
+  outline: none;
+  width: 80%;
+  max-width: 300px;
+  border-style: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+/*# sourceMappingURL=Footer.css.map */

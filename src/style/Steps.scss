@@ -1,0 +1,52 @@
+@import '../style/general.css';
+
+.Steps-container{
+    padding: 50px 0;
+    // background: linear-gradient(to bottom,#1F232E, #c31432);
+    background:#1F232E ;
+    color: white;
+    .Steps-title {
+        text-align: center
+    }
+}
+.margin-container{
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.Steps-grid {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-auto-rows: auto;
+    grid-gap: 20px;
+}
+
+.Steps-card  {
+    padding: 40px 20px;
+    border-radius: 10px;
+    // box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.246);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        color: #c31432;
+        padding: 2px;
+        border: 2px solid #c31432;
+        border-radius: 50%;
+    }
+    h2{
+        text-align: center;
+        font-size: 1.4rem;
+        margin: 10px 0;
+        
+    }
+    p{
+        text-align: center;
+    }
+}

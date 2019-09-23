@@ -12,28 +12,35 @@
 }
 
 .Prices-card {
-    padding: 20px 40px;
+    padding: 70px 40px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.322);
     border-radius: 10px;
     background: linear-gradient(to bottom, #c31432, #240b36);
-    // clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
     color: white;
     transition: .5s;
-    &:hover{
-        .front{
-            transform:  perspective(600px) rotateY(-180deg);
-        }
-        .back{
-            transform:  perspective(600px) rotateY(0deg);
-        }
+    .Prices-price {
+        padding: 30px 0;
+        text-align: center;
     }
-    .front, .back{
-        backface-visibility: hidden;
+    .Prices-info{
+        padding: 20px 0;
     }
-    .front{
-        transform:  perspective(600px) rotateY(0deg);
-    }
-    .back{
-        transform:  perspective(600px) rotateY(180deg);
-    }
+//     &:hover{
+//         .front{
+//             transform:  perspective(600px) rotateY(-180deg);
+//         }
+//         .back{
+//             transform:  perspective(600px) rotateY(0deg);
+//         }
+//     }
+//     .front, .back{
+//         backface-visibility: hidden;
+//     }
+//     .front{
+//         transform:  perspective(600px) rotateY(0deg);
+//     }
+//     .back{
+//         transform:  perspective(600px) rotateY(180deg);
+//     }
 }
